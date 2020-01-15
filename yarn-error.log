@@ -1,0 +1,64 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.12.3/libexec/bin/yarn.js
+
+PATH: 
+  /usr/bin:/Users/kalilmvp/anaconda3/bin:/Users/kalilmvp/Documents/Development/flutter/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/Users/kalilmvp/.rvm/gems/ruby-1.9.3-p362/bin:/Users/kalilmvp/.rvm/gems/ruby-1.9.3-p362@global/bin:/Users/kalilmvp/.rvm/rubies/ruby-1.9.3-p362/bin:/Users/kalilmvp/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/go/bin:/opt/X11/bin:/Applications/Wireshark.app/Contents/MacOS:/Users/kalilmvp/anaconda3/bin:/Users/kalilmvp/Documents/Development/flutter/bin:/opt/local/bin:/opt/local/sbin:/Users/kalilmvp/.rvm/gems/ruby-1.9.3-p362/bin:/Users/kalilmvp/.rvm/gems/ruby-1.9.3-p362@global/bin:/Users/kalilmvp/.rvm/rubies/ruby-1.9.3-p362/bin:/Users/kalilmvp/.rvm/bin:/Users/kalilmvp/.ec2/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/bin:/Users/kalilmvp/Documents/Development/apache-maven-3.6.1//bin:/Users/kalilmvp/Documents/Development/groovy-2.4.4/bin:/Users/kalilmvp/Documents/Development/forge/bin:/usr/local/Cellar/mysql/5.6.27/bin:/Users/kalilmvp/Documents/Development/mongodb-osx-x86_64-3.4.5/bin:{GOPATH}/bin:/Users/kalilmvp/Documents/Development/kafka_2.12-2.0.0/bin:/Users/kalilmvp/.ec2/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/bin:/Users/kalilmvp/Documents/Development/apache-maven-3.6.1//bin:/Users/kalilmvp/Documents/Development/groovy-2.4.4/bin:/Users/kalilmvp/Documents/Development/forge/bin:/usr/local/Cellar/mysql/5.6.27/bin:/Users/kalilmvp/Documents/Development/mongodb-osx-x86_64-3.4.5/bin:{GOPATH}/bin:/Users/kalilmvp/Documents/Development/kafka_2.12-2.0.0/bin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.14.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND nexus.jupiter.co.ao nexus.jupiter.co.ao:80
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+
+npm manifest: 
+  {
+    "name": "template-node",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "nodemon src/server.js",
+      "build": "sucrase ./src -d ./dist --transforms imports",
+      "pretest": "NODE_ENV=test sequelize db:migrate",
+      "test": "NODE_ENV=test jest -i",
+      "posttest": "NODE_ENV=test sequelize db:migrate:undo:all"
+    },
+    "dependencies": {
+      "dotenv": "^8.0.0",
+      "express": "^4.17.1",
+      "express-async-errors": "^3.1.1",
+      "pg": "^7.17.1",
+      "pg-hstore": "^2.3.3",
+      "sequelize": "^5.9.4",
+      "youch": "^2.0.10"
+    },
+    "devDependencies": {
+      "@sucrase/jest-plugin": "^2.0.0",
+      "@types/jest": "^24.0.25",
+      "eslint": "^5.16.0",
+      "eslint-config-airbnb-base": "^13.2.0",
+      "eslint-config-prettier": "^6.0.0",
+      "eslint-plugin-import": "^2.18.0",
+      "eslint-plugin-prettier": "^3.1.0",
+      "jest": "^24.9.0",
+      "nodemon": "^1.19.1",
+      "prettier": "^1.18.2",
+      "sequelize-cli": "^5.5.0",
+      "sqlite3": "^4.1.1",
+      "sucrase": "^3.10.1",
+      "supertest": "^4.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
